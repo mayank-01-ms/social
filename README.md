@@ -1,1 +1,1 @@
-A socila media based web application
+A social media based web application

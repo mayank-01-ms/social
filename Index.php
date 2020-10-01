@@ -157,6 +157,7 @@ if ($found == 0){
     exit();
 }
 
+//Page structure 
 ?>
 <!DOCTYPE html>
 <html lang="en" data-theme='light'>

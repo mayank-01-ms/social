@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function UserLogin() {
+        if (
+          document.login.UserName.value == "admin" &&
+          document.login.Password.value == "admin"
+        ) {
+          document.getElementById("display").innerHTML = document.write(
+            "Valid User"
+          );
+        } else {
+          document.getElementById("display").innerHTML = document.write(
+            "Invalid User"
+          );
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form name="login" onSubmit="return(UserLogin());">
+      <h1>Login Page</h1>
+      <table>
+        <tr>
+          <td>User Name:</td>
+          <td><input type="text" name="UserName" /></td>
+        </tr>
+        <tr>
+          <td>Password:</td>
+          <td><input type="password" name="Password" /></td>
+        </tr>
+        <tr>
+          <td><input type="button" onclick="UserLogin()" value="Login" /></td>
+        </tr>
+        <tr>
+          <p><span id="display"></span></p>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
